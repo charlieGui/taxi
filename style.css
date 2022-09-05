@@ -93,7 +93,7 @@ main{
 }
 
 footer{
-    border-radius: 5px;
+    
     /*margin: 10px 0 20px 0;*/
     color: white;
     background-color:#111 ;
@@ -151,8 +151,8 @@ footer a{
 
 @media screen and (max-width: 680px){
     body{
-        margin: 0 2%;
-        background-color: #000;
+        background-color: rgb(24, 48, 92);
+        padding: 0 1%;
     }
     p.coming{
         color: white;
@@ -174,12 +174,27 @@ footer a{
     }
    
     #intro{
-        color: white;
+        position: absolute;
+        top: 2%;
+        padding: 0 2%;
+        color: black;
         font-weight: normal;
         letter-spacing: 2px;
+    }
+    .image{
+        
     }
     .containerContact{
         padding: 5% 0;
         position: initial;
+        background-color: #111;
     }
+
+    div.contact{
+        color: white;
+        font-size: 2em;
+        font-weight: 100;
+    }
+
+
 }
