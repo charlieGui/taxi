@@ -67,7 +67,7 @@ main{
     text-align: center;
     position: absolute;
     width: 100%;
-    top: 28%;
+    top: 25%;
     z-index: 10;
 }
 #intro{
@@ -76,16 +76,18 @@ main{
 }
 
 .contact{
-    justify-content: space-between;
-    width: 90%;
-    margin: 0 auto;
-    margin-top: 3em;
-    color: rgb(32, 52, 82);
-    font-size: 2em;
+    margin-top: 6em;
+    padding: 1% 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color:rgba(255, 255, 255, 0.2);
+    color:black;
+    font-size: 2.25em;
 }
 
 .contact :first-child{
    letter-spacing: 2px;
+   margin-bottom: .3em;
 }
 
 .containerContact :last-child{
@@ -93,8 +95,6 @@ main{
 }
 
 footer{
-    
-    /*margin: 10px 0 20px 0;*/
     color: white;
     background-color:#111 ;
     padding: 1em 1em .5em 1em;
@@ -122,28 +122,52 @@ footer > p{
 footer a{
     color: rgb(78, 57, 136);
 }
-
-@media screen and (min-width: 425px) and (max-width: 865px){
-    .coming{
-        font-size: 1.25em;
-    }
-
+@media screen and (min-width:866px){
     
-    
-    .containerContact{
-        padding-top: 0;
-    }
-    #intro {
-        font-size: 1.15em;
+    .flexCol img:last-child{
+        display: none;
     }
 
     .contact{
-        margin-top: .5em;
+        width: 38%;
+        flex-direction: column;
     }
+    
+}
+@media screen and (min-width: 425px) and (max-width: 865px){
+    .none{
+        display: none;
+    }
+    .coming{
+        font-size: 1.25em;
+    }
+    
+    .flexCol img:last-child{
+        display: none;
+    }
+    .containerContact{
+        padding-top: 0;
+    }
+    
+    #intro {
+        font-size: 1.15em;
+       
+    }
+    
+    .coming{
+        letter-spacing: 10px;
+    }
+
+    .contact{
+        margin-top: 4em;
+        width: 38%;
+        flex-direction: column;
+    }
+    
     .contact p{
-        font-size: .8em;
-        
+       font-size: .7em;
     }
+
     footer aside {
         width: 90%;
     }
@@ -151,24 +175,32 @@ footer a{
 
 @media screen and (max-width: 680px){
     body{
-        background-color: #000;
+        background-color: #222;
     }
-
+   
     p.coming{
         color: white;
         font-size: 1em;
         text-align: center;
+        padding: .5em 0;
     }
-    .flexCol img{
+    .flexCol img:first-child{
+        display: none;
+       
+    }
+    .flexCol img:last-child{
+        display: block;
+        border-top: 1px solid red;
+        border-bottom: 1px solid red;
         padding: 2% 0;
-       width: 4em;
+        width: 6em;
     }
     .flexCol{
         display: flex;
         flex-direction: column;
     }
     header{
-        padding: 5% 0;
+        padding: 4% 0;
         position: initial;
         background-color: #111;
     }
