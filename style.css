@@ -141,9 +141,16 @@ footer a{
         font-size: 2.25em;
     }
 
-    .contact :first-child{
-        margin-bottom: .3em;
-     }
+    .contact a:first-child{
+        display: none;
+    }
+    .contact a:last-child{
+        color: #000;
+    }
+
+    .contact a:last-child:hover{
+        color: rgb(255, 30, 0);
+    }
 }
              /**  680 pixels > ECRAN < 1023 pixels **/
 
@@ -194,17 +201,25 @@ footer a{
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px;
         background-color:rgba(255, 255, 255, 0.2);
-        color:black;
-        font-size: 2.255em;
+        font-size: 2.25em;
     }
-    
-    .contact p{
-        font-size: .7em;
+
+    .contact a:first-child{
+        display: none;
+    }
+
+    .contact a:last-child, .contact p{
+        color: #000;
+        font-size:.7em;
     }
 
     .contact :first-child{
         margin-bottom: .3em;
      }
+
+     .contact a:last-child:hover{
+        color: rgb(255, 30, 0);
+    }
 }
 
             /** ECRAN < 680 pixels **/
@@ -259,15 +274,21 @@ footer a{
 
     .contact{
         background-color: #111;
-        padding: 2em 0;
+        padding: 1.5em 0 1em 0;
         color: #DDD;
         font-size: 1.5em;
-        /*box-shadow: 0 0 20px 1px inset rgb(255, 30, 0);*/
-        border: 3px solid rgb(255, 30, 0);
-        margin: 1.5em 1em 2em 1em;
+        box-shadow: 0 0 20px -5px  rgb(255, 30, 0);
+        border-radius: 5px;
+        /*border: 3px solid rgb(255, 30, 0);*/
+        margin: 1.5em 1.5em 2em 1.5em;
     }
     
-    .contact p:first-child{
+    .contact p{
+        display: none;
+    }
+
+    .contact a{
         margin-bottom: .5em;
+        color:#DDD;
     }
 }
