@@ -264,7 +264,7 @@ footer a{
         font-size: 1.5em;
         /*box-shadow: 0 0 20px 1px inset rgb(255, 30, 0);*/
         border: 3px solid rgb(255, 30, 0);
-        margin: 2em;
+        margin: 1.5em 1em 2em 1em;
     }
     
     .contact p:first-child{
