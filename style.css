@@ -259,7 +259,7 @@ footer a{
 
     .contact{
         background-color: #111;
-        padding: 3em 0;
+        padding: 2em 0;
         color: #DDD;
         font-size: 1.5em;
         /*box-shadow: 0 0 20px 1px inset rgb(255, 30, 0);*/
@@ -268,6 +268,6 @@ footer a{
     }
     
     .contact p:first-child{
-        margin-bottom: 1em;
+        margin-bottom: .5em;
     }
 }
