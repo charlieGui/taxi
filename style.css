@@ -206,7 +206,7 @@ footer a{
    
     p.coming{
         color: #DDD;
-        font-size: 1em;
+        font-size: 1.30em;
         text-align: center;
         padding: .5em 0;
         letter-spacing: 10px;
@@ -240,25 +240,32 @@ footer a{
         font-weight: normal;
         letter-spacing: 2px;
     }
+
     .image{
+        margin-top: .5em;
         background-color: #111;
     }
+
     .containerContact{
         padding: 0;
         position: initial;
-      
     }
 
     div.contact{
-        margin: .5% 1% 1% 1%;
-        padding: 4% 0;
-        color: white;
+       /* margin: 1% 1% 1% 1%;*/
+        /*padding: 1em 0;*/
+        background-color: #111;
+        padding: 3em 0;
+        color: #DDD;
         font-size: 1.5em;
-        border: 1px solid rgb(255, 30, 0);
-        margin: 1em;
+        /*box-shadow: 0 0 20px 1px inset rgb(255, 30, 0);*/
+        border: 3px solid rgb(255, 30, 0);
+        margin: 2em;
     
     }
-
+    .contact p:first-child{
+        margin-bottom: 1em;
+    }
     footer aside{
         width: 90%;
         margin: 0 auto;
