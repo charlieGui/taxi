@@ -3,7 +3,11 @@
                         REGLES CSS COMMUNES
     **********************************************************
 */
-
+:root{
+    --bg-color : #111;
+    --color : #000;
+    --line-color:rgb(255, 30, 0);
+}
 *{
     padding: 0;
     margin: 0;
@@ -12,7 +16,7 @@
 }
 
 body{
-    background-color: #111;
+    background-color: var(--bg-color);
 }
 
 a{
@@ -49,7 +53,7 @@ main{
 
 footer{
     color: white;
-    background-color: #111;
+    background-color: var(--bg-color);
     padding: 1em 1em .5em 1em;
 }
 
@@ -62,8 +66,8 @@ footer aside{
 }
 
 aside h3{
-    border-top: 1px solid rgb(255, 30, 0);
-    border-bottom: 1px solid rgb(255, 30, 0);
+    border-top: 1px solid var(--line-color);
+    border-bottom: 1px solid var(--line-color);
     display: inline;
     padding:.35em 1em;
     text-transform: uppercase;
@@ -116,7 +120,7 @@ footer a{
 
     .containerContact{
         padding-top: 1%;
-        color: #000;
+        color: var(--color);
         text-align: center;
         font-weight: bold;
         position: absolute;
@@ -137,7 +141,7 @@ footer a{
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px;
         background-color:rgba(255, 255, 255, 0.2);
-        color:black;
+        color:var(--color);
         font-size: 2.25em;
     }
 
@@ -145,11 +149,11 @@ footer a{
         display: none;
     }
     .contact a:last-child{
-        color: #000;
+        color: var(--color);
     }
 
     .contact a:last-child:hover{
-        color: rgb(255, 30, 0);
+        color: var(--line-color);
     }
 }
              /**  680 pixels > ECRAN < 1023 pixels **/
@@ -184,7 +188,7 @@ footer a{
 
     .containerContact{
         padding-top: initial;
-       color: #000;
+       color: var(--color);
         text-align: center;
         font-weight: bold;
         position: absolute;
@@ -209,7 +213,7 @@ footer a{
     }
 
     .contact a:last-child, .contact p{
-        color: #000;
+        color: var(--color);
         font-size:.7em;
     }
 
@@ -218,13 +222,16 @@ footer a{
      }
 
      .contact a:last-child:hover{
-        color: rgb(255, 30, 0);
+        color: var(--line-color);
     }
 }
 
             /** ECRAN < 680 pixels **/
 
 @media screen and (max-width: 680px){
+    body{
+        background-color: #DDD;
+    }
     .flex{
         display: flex;
         flex-direction: column;
@@ -235,51 +242,59 @@ footer a{
     }
 
     p.coming{
-        color: #DDD;
-        font-size: 1.30em;
+       
+        color: #111;
+        font-size: 1.5em;
         text-align: center;
         padding: .5em 0;
         letter-spacing: 10px;
+        background-color: #DDD;
     }
 
-    h1 img:first-child{
-        display: none;
-    }
+    h1 img{
+width: 6em;
+
+     }
     
-    img[src*="white"]{
+    /*img[src*="white"]{
         display: block;
-        border-top: 1px solid rgb(255, 30, 0);
-        border-bottom: 1px solid rgb(255, 30, 0);
+        border-top: 1px solid var(--line-color);
+        border-bottom: 1px solid var(--line-color);
         padding: 2% 0;
         width: 6em;
-    }
+    }*/
 
+    img[type*="photos"]{
+        box-shadow: 2px 2px 6px -2px #000;
+    }
     .image{
-        margin-top: .5em;
+        margin: 0 10px;
+        /*box-shadow: 2px 2px 6px -2px #111;*/
     }
 
     #intro{
         position: absolute;
         top: 2%;
         padding: 0 2%;
-        color: black;
+        color: var(--color);
         font-weight: normal;
         letter-spacing: 2px;
     }
 
     .containerContact{
-        color: #000;
+        color: var(--color);
         text-align: center;
+
         }
 
     .contact{
-        background-color: #111;
+        
         padding: 1.5em 0 1em 0;
-        color: #DDD;
+        background-color: #CCC;
         font-size: 1.5em;
-        box-shadow: 0 0 20px -5px  rgb(255, 30, 0);
-        border-radius: 5px;
-        /*border: 3px solid rgb(255, 30, 0);*/
+        box-shadow: 2px 2px 6px -2px #111;
+        border:.5px solid rgb(180, 180, 180);
+        
         margin: 1.75em 1.5em 2.10em 1.5em;
     }
     
@@ -288,7 +303,13 @@ footer a{
     }
 
     .contact a{
-        margin-bottom: .5em;
-        color:#DDD;
+       
+        border: none;
+        
+        color: #111;
+        
+        
     }
+
+
 }
