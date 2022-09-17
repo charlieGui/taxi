@@ -14,7 +14,10 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
-
+.wrapper{
+    width: 1280px;
+    margin: 0 auto;;
+}
 body{
     background-color: var(--bg-color);
 }
@@ -95,10 +98,13 @@ footer a{
             /** 1024 pixels < ECRAN  **/
 
 @media screen and (min-width:1024px){
+  
     header{
         width: 100%;
         position: absolute;
         z-index:15;
+        background-color:rgba(255, 255, 255, 0.4);
+       
     }
 
     .coming{
@@ -113,35 +119,49 @@ footer a{
     header div:last-of-type{
         text-align: center;
     }
-    
+    img[src*="logo"]{
+        width: 8.5em;
+       
+    }
     img[src*="white"]{
         display: none;
     }
 
+    .image img{
+        filter:brightness(90%);
+    }
+
     .containerContact{
         padding-top: 1%;
-        color: var(--color);
+        color: rgb(180, 180, 180);
         text-align: center;
         font-weight: bold;
         position: absolute;
-        width: 100%;
-        top: 25%;
+        width: 36%;
+        top: 30%;
+        
+        background-color:rgba(30, 30, 30, 0.9);
         z-index: 10;
     }
 
+   
     #intro{
-        font-size: 1.25em;
+        font-size: 1.1em;
+        padding: 1em 1em 0 2em;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        /*background-color:rgba(255, 255, 255, 0.4);*/
     }
 
     .contact{
-        width: 38%;
+        width: 100%;
         flex-direction: column;
-        margin-top: 5.5em;
+        margin: 1em 0 1em 0;
         padding: 1% 0;
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px;
-        background-color:rgba(255, 255, 255, 0.2);
-        color:var(--color);
+      
+        color:#DDD;
         font-size: 2.25em;
     }
 
@@ -149,11 +169,16 @@ footer a{
         display: none;
     }
     .contact a:last-child{
-        color: var(--color);
+        color: #999;
+        font-weight: normal;
     }
+ .contact p{
+    color: rgb(204, 57, 38);
+    font-weight: normal;
+}
 
     .contact a:last-child:hover{
-        color: var(--line-color);
+        color: rgb(204, 57, 38);
     }
 }
              /**  680 pixels > ECRAN < 1023 pixels **/
@@ -161,7 +186,9 @@ footer a{
 @media screen and (min-width: 680px) and (max-width: 1023px){
     
     header{
+        width: 100%;
         position: absolute;
+        background-color:rgba(255, 255, 255, 0.4);
         z-index:15;
     }
 
@@ -178,33 +205,42 @@ footer a{
         text-align: center;
     }
 
+    img[src*="logo"]{
+        width: 5.8em;
+       
+    }
+
    img[src*="white"]{
         display: none;
     }
 
     #intro {
-        font-size: 1.15em;
+        font-size: .9em;
+        padding: 1em 1em 0 2em;
+        text-transform: uppercase;
     }
+
 
     .containerContact{
         padding-top: initial;
-       color: var(--color);
+       color:rgb(180, 180, 180);
         text-align: center;
-        font-weight: bold;
+       
         position: absolute;
-        width: 100%;
+        width: 35%;
         top: 24%;
+        background-color:rgba(30, 30, 30, 0.9);
         z-index: 10;
     }
     
     .contact{
-        margin-top: 4em;
-        width: 38%;
+        margin: .5em 0 1em 0;
+        width: 100%;
         flex-direction: column;
         padding: 1% 0;
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px;
-        background-color:rgba(255, 255, 255, 0.2);
+       
         font-size: 2.25em;
     }
 
@@ -212,17 +248,20 @@ footer a{
         display: none;
     }
 
-    .contact a:last-child, .contact p{
-        color: var(--color);
-        font-size:.7em;
+    .contact a:last-child {
+        color: #999;
+        font-size:.6em;
     }
-
+    .contact p{
+    color: rgb(204, 57, 38);
+    font-size: .6em;
+    }
     .contact :first-child{
         margin-bottom: .3em;
      }
 
      .contact a:last-child:hover{
-        color: var(--line-color);
+        color: rgb(204, 57, 38);
     }
 }
 
@@ -252,9 +291,8 @@ footer a{
     }
 
     h1 img{
-width: 6em;
-
-     }
+            width: 6em;
+        }
     
     /*img[src*="white"]{
         display: block;
@@ -303,12 +341,23 @@ width: 6em;
     }
 
     .contact a{
-       
         border: none;
-        
         color: #111;
-        
-        
+    }
+
+    footer, footer aside{
+        color: #111;
+        background-color: #999;
+    }
+
+    footer aside{
+        width: 60%;
+       
+    }
+
+    footer >p{
+        background-color: #DDD;
+     
     }
 
 
