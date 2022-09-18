@@ -80,14 +80,15 @@ aside p{
     margin-top: 1.5em;
 }
 
-footer > p{
-    margin-top: 1em;
+ #small{
+    margin: 1em;
     text-align: center;
     font-size: .6em;
     letter-spacing: 2px;
+    
 }
 
-footer a{
+#small a{
     color: rgb(57, 82, 136);
 }
 /*
@@ -332,13 +333,13 @@ footer a{
 
     #intro{
         position: absolute;
-        top: -10%;
+        top: -9%;
         font-size: .9em;
        margin: 0 1.85%;
-       border-top:1px solid rgb(204, 57, 38);
-       /*border-bottom: 2px solid rgb(204, 57, 38);*/
+       /*border-top:1px solid rgb(204, 57, 38);*/
+       border-bottom: 2px solid rgb(204, 57, 38);
         background-color: #111;
-        padding: .5em 1%;
+        padding: 1.15em 1%;
         color: #999;
        
         font-weight: normal;
