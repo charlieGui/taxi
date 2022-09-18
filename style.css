@@ -284,6 +284,7 @@ footer a{
 }
 
             /** ECRAN < 680 pixels **/
+/* PARAMETRER LIEN GRAND ECRAN ET TABLETTE */
 
 @media screen and (max-width: 680px){
     body{
@@ -359,7 +360,7 @@ footer a{
         box-shadow: 2px 2px 6px -2px #111;
         border:.5px solid rgb(180, 180, 180);
         
-        margin: 1.75em 1.5em 2.10em 0;
+        margin: 1.75em 2% 2.10em 2%;
     }
     
     .contact p{
@@ -375,16 +376,16 @@ footer a{
         color: #999;
     }
 
-    footer, footer aside{
-        
-        margin-left: 1.5em;
+    footer{
+        /*margin-left: 1.5em;*/
+        margin: 0 2%;
         color: #999;
         background-color: #111;
     }
 
     footer aside{
         width: 80%;
-        text-align: left;
+        text-align: center;
     }
 
     #small {
@@ -396,6 +397,7 @@ footer a{
     }
 
     #small a{
+        
         color: #111;
     }
 }
