@@ -104,10 +104,16 @@ footer a{
         position: absolute;
         z-index:15;
         background-color:rgba(255, 255, 255, 0.4);
-       
     }
 
+   /* header{
+        width: 100%;
+        z-index:15; // Pour photo conservé entier
+    }
+*/
+
     .coming{
+        color: #111;
         font-size: 2em;
         letter-spacing: 15px;
     }
@@ -119,45 +125,57 @@ footer a{
     header div:last-of-type{
         text-align: center;
     }
-    img[src*="logo"]{
+    img[src*="color"]{
         width: 8.5em;
        
     }
     img[src*="white"]{
-        display: none;
+       width: 6.5em;
+       display: none;
     }
-
+    
     .image img{
+    
         filter:brightness(90%);
+
     }
+   /* .image{
+        width: 65%;
+        margin: 0 auto;;
+        filter:brightness(90%); POur photo conservé
+    }*/
+    
+    /*.image img{
+        height: 500px;
+    }*/
 
     .containerContact{
         padding-top: 1%;
         color: rgb(180, 180, 180);
         text-align: center;
-        font-weight: bold;
+       
         position: absolute;
         width: 36%;
-        top: 30%;
         
+        top: 30%;
+        border-radius: 2px;
         background-color:rgba(30, 30, 30, 0.9);
+        /*background-color: #111;*/ /*Pour photo conservé*/
         z-index: 10;
     }
 
    
     #intro{
         font-size: 1.1em;
-        padding: 1em 1em 0 2em;
+        padding: .7em 1em 0 2em;
         letter-spacing: 2px;
         text-transform: uppercase;
-        /*background-color:rgba(255, 255, 255, 0.4);*/
     }
 
     .contact{
         width: 100%;
         flex-direction: column;
-        margin: 1em 0 1em 0;
-        padding: 1% 0;
+        margin: 1em 0 .5em 0;
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px;
       
@@ -302,19 +320,27 @@ footer a{
         width: 6em;
     }*/
 
-    img[type*="photos"]{
-        box-shadow: 2px 2px 6px -2px #000;
+    img[src*="photos"]{
+
+       
+        /*box-shadow: 2px 2px 4px 1px #000;*/
     }
     .image{
-        margin: 0 10px;
+        margin: 0 2%;
         /*box-shadow: 2px 2px 6px -2px #111;*/
     }
 
     #intro{
         position: absolute;
-        top: 2%;
-        padding: 0 2%;
-        color: var(--color);
+        top: 0;
+        font-size: .9em;
+       margin: 0 1.75%;
+       border-top:2px solid  rgb(204, 57, 38);
+       border-bottom: 2px solid rgb(204, 57, 38);
+        background-color: #111;
+        padding: .5em 1%;
+        color: #999;
+       
         font-weight: normal;
         letter-spacing: 2px;
     }
@@ -328,37 +354,49 @@ footer a{
     .contact{
         
         padding: 1.5em 0 1em 0;
-        background-color: #CCC;
+        background-color: #111;
+        
         font-size: 1.5em;
         box-shadow: 2px 2px 6px -2px #111;
         border:.5px solid rgb(180, 180, 180);
         
-        margin: 1.75em 1.5em 2.10em 1.5em;
+        margin: 1.75em 1.5em 2.10em 0;
     }
     
     .contact p{
         display: none;
     }
 
+    .contact a:first-child{
+        color:rgb(204, 57, 38);
+
+    }
     .contact a{
         border: none;
-        color: #111;
+        color: #999;
     }
 
     footer, footer aside{
-        color: #111;
-        background-color: #999;
+        
+        margin-left: 1.5em;
+        color: #999;
+        background-color: #111;
     }
 
     footer aside{
-        width: 60%;
-       
+        width: 80%;
+        text-align: left;
     }
 
-    footer >p{
-        background-color: #DDD;
-     
+    #small {
+    margin: 1em 0;
+    text-align: center;
+    font-size: .6em;
+    letter-spacing: 2px;
+    color: #111;
     }
 
-
+    #small a{
+        color: #111;
+    }
 }
