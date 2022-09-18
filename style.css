@@ -320,11 +320,6 @@ footer a{
         width: 6em;
     }*/
 
-    img[src*="photos"]{
-
-       
-        /*box-shadow: 2px 2px 4px 1px #000;*/
-    }
     .image{
         margin: 0 2%;
         /*box-shadow: 2px 2px 6px -2px #111;*/
@@ -337,7 +332,7 @@ footer a{
        margin: 0 1.75%;
        border-top:2px solid  rgb(204, 57, 38);
        border-bottom: 2px solid rgb(204, 57, 38);
-        background-color: #111;
+        background-color: rgba(30, 30, 30, 0.9);
         padding: .5em 1%;
         color: #999;
        
@@ -355,7 +350,7 @@ footer a{
         
         padding: 1.5em 0 1em 0;
         background-color: #111;
-        
+        padding-bottom: 1.7em;
         font-size: 1.5em;
         box-shadow: 2px 2px 6px -2px #111;
         border:.5px solid rgb(180, 180, 180);
