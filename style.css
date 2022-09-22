@@ -285,7 +285,7 @@ aside h3{
 
    
 p.coming + p{
-    color: rgb(204, 57, 38);
+    -webkit-text-fill-color: rgb(204, 57, 38);
     font-size: 1.15em;
     text-align: center;
    margin-top: .25em;
