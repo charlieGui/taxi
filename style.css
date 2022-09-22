@@ -202,7 +202,7 @@ aside h3{
         font-weight: normal;
     }*/
  p.coming + p{
-    color: rgb(204, 57, 38);
+    -webkit-text-fill-color: rgb(204, 57, 38);
     font-size: 1.75em;
     text-align: center;
     margin: 1em 0 0 0 ;
@@ -317,7 +317,8 @@ aside > p{
 
 @media screen and (max-width: 680px){
     body{
-        background-color:lightgrey;
+        background: rgb(210,210,210);
+background: linear-gradient(0deg, rgba(210,210,210,1) 11%, rgba(255,255,255,1) 76%);
     }
     .flex{
         display: flex;
