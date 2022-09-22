@@ -8,7 +8,7 @@ $(document).ready(function () {
 
 
 function soonAnimation(){
-    $('#intro').animate({"left" : "-70%"}, 25000, "linear",
+    $('#intro').animate({"left" : "-100%"}, 25000, "linear",
     function(){
         $(this).css({"left": "100%"});
     });
