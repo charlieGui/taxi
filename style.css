@@ -3,19 +3,19 @@
                         REGLES CSS COMMUNES
     **********************************************************
 */ 
-/*@font-face {
+@font-face {
     font-family: 'Sansation';
     src: url('fonts/Sansation_Bold.ttf')format('truetype'),
     url('fonts/Sansation_Light.ttf')format('truetype'),
     url('fonts/Sansation_Regular.ttf')format('truetype'),
     url('fonts/Sansation_Italic.ttf')format('truetype');
-   font-weight: normal;
-}*/
+   font-weight: light;
+}
 
 :root{
     --bg-color : #111;
     --color : #000;
-    --line-color:rgb(255, 30, 0);
+    --line-color:rgb(31, 16, 14);
 }
 *{
     padding: 0;
@@ -119,11 +119,12 @@ aside h3{
         color: #111;
         font-size: 2em;
         letter-spacing: 15px;
+        
     }
 
     header div:first-of-type{
         text-align: center;
-        font-weight: bold;
+       
     }
 
     header div:last-of-type{
@@ -204,7 +205,7 @@ aside h3{
     font-size: 1.75em;
     text-align: center;
     margin: 1em 0 0 0 ;
-    font-weight: normal;
+    font-weight: light;
 }
    /* p:first-of-type + p{
         margin-left: 4em;
