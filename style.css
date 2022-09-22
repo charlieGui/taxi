@@ -135,10 +135,7 @@ aside h3{
         width: 8em;
        
     }
-    img[src*="white"]{
-       width: 6.5em;
-       display: none;
-    }
+    
    
     .image img{
     
@@ -219,11 +216,11 @@ aside h3{
     div.contact{
         display: none;
     }
-   p.coming + p > a{
+   /*p.coming + p > a{
     color:rgb(44, 44, 131);
 
-    /*margin-right: 3em;*/
-   }
+    /*margin-right: 3em;
+   }*/
     #mail a:hover{
         color: rgb(204, 57, 38);
     }
@@ -291,6 +288,12 @@ p.coming + p{
    margin-top: .25em;
    
 }
+
+#mail a{
+    font-size: 1.2em;
+    -webkit-text-fill-color: rgb(204, 57, 38);
+
+}
 div.contact{
     display: none;
 }
@@ -313,7 +316,6 @@ aside > p{
 }
 
             /** ECRAN < 680 pixels **/
-/* PARAMETRER LIEN GRAND ECRAN ET TABLETTE */
 
 @media screen and (max-width: 680px){
     body{
