@@ -9,13 +9,13 @@
     url('fonts/Sansation_Light.ttf')format('truetype'),
     url('fonts/Sansation_Regular.ttf')format('truetype'),
     url('fonts/Sansation_Italic.ttf')format('truetype');
-   font-weight: light;
+   font-weight: normal;
 }
 
 :root{
     --bg-color : #111;
     --color : #000;
-    --line-color:rgb(31, 16, 14);
+   
 }
 *{
     padding: 0;
@@ -77,8 +77,8 @@ footer aside{
 }
 
 aside h3{
-    border-top: 1px solid var(--line-color);
-    border-bottom: 1px solid var(--line-color);
+    border-top: 1px solid rgb(255, 30, 0);
+    border-bottom: 1px solid rgb(255, 30, 0);
     display: inline;
     padding:.35em 1em;
     font-weight: normal;
