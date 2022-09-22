@@ -5,9 +5,9 @@
 */ 
 @font-face {
     font-family: 'Sansation';
-    src: url('fonts/Sansation_Bold.ttf')format('truetype'),
+    src: url('fonts/Sansation_Regular.ttf')format('truetype'),
     url('fonts/Sansation_Light.ttf')format('truetype'),
-    url('fonts/Sansation_Regular.ttf')format('truetype'),
+    url('fonts/Sansation_Bold.ttf')format('truetype'),
     url('fonts/Sansation_Italic.ttf')format('truetype');
    font-weight: normal;
 }
@@ -15,8 +15,8 @@
 :root{
     --bg-color : #111;
     --color : #000;
-   
 }
+
 *{
     padding: 0;
     margin: 0;
@@ -54,7 +54,7 @@ header *{
 
 .coming{
     font-family: 'Sansation' ;
-    
+    font-weight: bold;
     display: none;
   }
 
@@ -73,7 +73,8 @@ footer aside{
     margin: 0 auto;
     color:#DDD;
     text-align: center;
-    padding:  1em 0 1.5em 0;
+    
+    
 }
 
 aside h3{
@@ -88,7 +89,7 @@ aside h3{
 
 
  #small{
-    margin:1em;
+    margin: 1em 0 .5em 0;
     text-align: center;
     font-size: .6em;
     letter-spacing: 2px;
@@ -175,7 +176,7 @@ aside h3{
         position: relative;
         left: 100%;
         font-size: .7em;
-        /*padding: 0 1em 0 2em;*/
+       
         letter-spacing: 2px;
         text-transform: uppercase;
        font-weight: bold;
@@ -219,16 +220,19 @@ aside h3{
         display: none;
     }
    p.coming + p > a{
-    color:blue;
+    color:rgb(44, 44, 131);
 
     /*margin-right: 3em;*/
    }
-    p.coming + a:hover{
+    #mail a:hover{
         color: rgb(204, 57, 38);
     }
-
-    aside p{
+    footer aside{
         margin-top: 1.5em;
+        margin-bottom: 1.5em;
+    }
+    aside p{
+        margin-top:1.5em;
     }
 }
              /**  680 pixels > ECRAN < 1023 pixels **/
@@ -236,10 +240,10 @@ aside h3{
 @media screen and (min-width: 680px) and (max-width: 1023px){
     
     header{
-        width: 100%;
-        position: absolute;
-        background-color:rgba(255, 255, 255, 0.4);
-        z-index:15;
+       
+       
+        background-color:rgb(245, 245, 245);
+       
     }
 
     .flexCol{
@@ -249,6 +253,7 @@ aside h3{
     .coming{
         font-size: 1.35em;
         letter-spacing: 10px;
+        margin-bottom: 1em;
     }
     
     header div:first-of-type{
@@ -260,20 +265,17 @@ aside h3{
     }
 
     img[src*="logo"]{
-        width: 5.6em;
+        width: 6.5em;
       
-    }
-
-   img[src*="white"]{
-        display: none;
     }
 
     #intro{
       
         position: relative;
-        left: 100%;
-        font-size: .5em;
-       
+        width: 100%;
+        left: 110%;
+        font-size: .65em;
+       margin-top:1em;
         letter-spacing: 2px;
         text-transform: uppercase;
        font-weight: bold;
@@ -294,15 +296,19 @@ div.contact{
 }
 
 footer aside{
-    margin-top: 2em;
+    margin-top: 1.75em;
+    margin-bottom: 3em;
     width: 70%;
 }
 
 aside > p{
-    margin-top: 2.5em;
+    margin-top: 3em;
     font-size: .9em;
 }
 
+#small{
+    margin-bottom: 2em;
+}
 
 }
 
