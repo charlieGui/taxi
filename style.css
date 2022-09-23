@@ -327,7 +327,8 @@ aside > p{
 
 @media screen and (max-width: 680px){
     body{
-       background-color:rgb(245, 245, 245);
+        background: rgb(210,210,210);
+        background: radial-gradient(circle, rgba(210,210,210,1) 1%, rgba(255,255,255,1) 50%);
     }
     .flex{
         display: flex;
@@ -339,9 +340,7 @@ aside > p{
        padding: 4% 0 0 1.5%;
      
     }
-main{
-    background-color: lightgray;
-}
+
    
     p.coming{
        
@@ -359,7 +358,9 @@ main{
 
 
     .image img{
-        box-shadow: 4px 4px 5px -1px black;
+        /*box-shadow: 4px 4px 5px -1px black;*/
+       /* margin-left: 2%;                           Décallage de la photo
+        border-left: 4px solid rgb(204, 57, 38);*/   /*Avec liseré rouge
         /*border-left: 4px solid rgb(204, 57, 38);*/
        
     }
@@ -435,7 +436,7 @@ main{
 
     footer{
         /*margin-left: 1.5em;*/
-        margin: 0 0 1em 2%;
+        margin: 0 0   0 2%;
         padding: 2em 1em ;
        
         background-color:rgb(21, 48, 61);  
@@ -446,6 +447,7 @@ main{
     aside h3{
        margin: 2em 0;
        text-align: center;
+       font-size: 1.5em;
         
     }
 
@@ -460,9 +462,10 @@ main{
     aside p{
         text-align: left;
         margin-top: 2em;
+        font-size: 1.2em;
     }
     #small {
-    margin: 1em 0;
+   
     text-align: center;
     font-size: .6em;
     letter-spacing: 2px;

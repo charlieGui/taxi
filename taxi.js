@@ -5,7 +5,8 @@ $(document).ready(function () {
 
 
 function soonAnimation(){
-   if($(window).width() > 500){ // Animation lorsque l'ecran au dessus de 500px
+   if($(window).width() > 500){
+       // Animation lorsque l'ecran au dessus de 500px
         $('#intro').animate({"left" : "-100%"}, 25000, "linear",
         function(){
             $(this).css({"left": "100%"});
@@ -16,5 +17,5 @@ function soonAnimation(){
             $(this).css({"left": "100%"});
         });
     }
-    setTimeout(soonAnimation);
+    $stop=setTimeout(soonAnimation);
 }
