@@ -204,7 +204,8 @@ aside p{
         font-weight: normal;
     }*/
  p.coming + p{
-    -webkit-text-fill-color: rgb(204, 57, 38);
+    /*-webkit-text-fill-color: rgb(204, 57, 38);*/
+    -webkit-text-fill-color: rgb(39, 39, 90);
     font-size: 1.75em;
     text-align: center;
     margin: 1em 0 0 0 ;
@@ -287,7 +288,8 @@ aside p{
 
    
 p.coming + p{
-    -webkit-text-fill-color: rgb(204, 57, 38);
+    /*-webkit-text-fill-color: rgb(204, 57, 38);*/
+    -webkit-text-fill-color: rgb(39, 39, 90);
     font-size: 1.2em;
     text-align: center;
    margin-top: .25em;
@@ -296,7 +298,8 @@ p.coming + p{
 
 #mail a{
     font-size: 1.15em;
-    -webkit-text-fill-color: rgb(204, 57, 38);
+    /*-webkit-text-fill-color: rgb(204, 57, 38);*/
+    -webkit-text-fill-color: rgb(39, 39, 90);
 
 }
 div.contact{
@@ -336,7 +339,9 @@ aside > p{
        padding: 4% 0 0 1.5%;
      
     }
-
+main{
+    background-color: lightgray;
+}
    
     p.coming{
        
@@ -381,34 +386,59 @@ aside > p{
         }
 
     .contact{
-        
-        padding: 1.5em 0 1.7em 0;
-        background-color: #111;
+        background-color: rgb(21, 48, 61); 
+        padding: 3em 0 3em 0;
+       /* background-color: #111;*/
         font-size: 1.5em;
         border-right: 4px solid rgb(204, 57, 38); 
-        margin: 2em 2% 1.7em 0em;
+        margin: 1em 2% 1em 0em;
+        
+        
+       /* padding: 1.5em 0 1.7em 0;
+        background-color: rgb(245, 245, 245);
+        font-size: 1.5em;
+        border-right: 4px solid rgb(204, 57, 38); 
+        margin: 2em 2% 1.7em 0em;*/
+
     }
     
     .contact p{
-        display: none;
+        display: none;  
     }
 
-    .contact a:first-child{
-        color:rgb(204, 57, 38);
-       
-       
+    .contact a[href*="tel"]{
+        
+        display: inline;
+        
+       border-top: 2px solid rgb(255, 30, 0);
+       border-left:2px solid rgb(255, 30, 0);
+       /*border-right: 1px solid rgb(255, 30, 0);*/
+        border-radius: 2px;
+        padding: .7em 2em 1.5em 3em;
+        /*color:rgb(204, 57, 38);*/
+        color: #DDD;
+        
+        
+}
 
-    }
-    .contact a{
-        color:lightgray;
+.contact :first-child{
+    margin-bottom: .8em;
+}
+
+    .contact a[href*="mailto"]{
+        padding: .3em 1em .7em 1.5em;
+        border-bottom : 2px solid rgb(255, 30, 0);
+        /*border-left: 1px solid rgb(255, 30, 0);*/
+        border-right: 2px solid rgb(255, 30, 0);
+       color: #DDD;
     }
 
     footer{
         /*margin-left: 1.5em;*/
-        margin: 0 0 2em 2%;
+        margin: 0 0 1em 2%;
         padding: 2em 1em ;
        
-        background-color: #111;
+        background-color:rgb(21, 48, 61);  
         border-left: 4px solid rgb(204, 57, 38); 
        
     }
@@ -421,8 +451,8 @@ aside > p{
 
     footer aside{
         margin-top: 1em;
-        width: 90%;
-        text-align: left;
+        width: 60%;
+        text-align: center;
         font-size: .9em;
       
     }
@@ -439,7 +469,7 @@ aside > p{
     }
 
     #small a{
-        
+        font-weight: bold;
         color: #111;
     }
 }
