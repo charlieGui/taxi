@@ -64,8 +64,9 @@ main{
 
 footer{
     color: white;
-    background-color: var(--bg-color);
+    background-color:#111;
     padding: 1em 1em .5em 1em;
+   
 }
 
 footer aside{
@@ -84,8 +85,12 @@ aside h3{
     padding:.35em 0;
     font-weight: normal;
     text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
 }
 
+aside p{
+    font-family: 'Robot', sans-serif;
+}
 
 
  #small{
@@ -319,7 +324,7 @@ aside > p{
 
 @media screen and (max-width: 680px){
     body{
-       background-color: lightgray;
+       background-color:rgb(245, 245, 245);
     }
     .flex{
         display: flex;
@@ -353,11 +358,6 @@ aside > p{
         /*border-left: 4px solid rgb(204, 57, 38);*/
        
     }
-    .image{
-       /* margin: 0 0% 0 2%;*/
-        
-        /*box-shadow: 2px 2px 6px -2px #111;*/
-    }
 
     #intro{
         position: relative;
@@ -366,7 +366,7 @@ aside > p{
         font-size: .9em;
         color: #111;
         margin: 2em 0 0em 0;
-        font-weight: bold;
+       
         letter-spacing: 2px;
     }
 
@@ -381,13 +381,11 @@ aside > p{
         }
 
     .contact{
-    
+        
         padding: 1.5em 0 1.7em 0;
         background-color: #111;
         font-size: 1.5em;
-        
         border-right: 4px solid rgb(204, 57, 38); 
-       
         margin: 2em 2% 1.7em 0em;
     }
     
@@ -396,19 +394,20 @@ aside > p{
     }
 
     .contact a:first-child{
-        color:rgb(255, 30, 0);
-        border-left:1px solid grey;
+        color:rgb(204, 57, 38);
+       
+       
 
     }
     .contact a{
-        color:#DDD;
+        color:lightgray;
     }
 
     footer{
         /*margin-left: 1.5em;*/
         margin: 0 0 2em 2%;
         padding: 2em 1em ;
-        color: #999;
+       
         background-color: #111;
         border-left: 4px solid rgb(204, 57, 38); 
        
@@ -425,6 +424,7 @@ aside > p{
         width: 90%;
         text-align: left;
         font-size: .9em;
+      
     }
 
     aside p{
