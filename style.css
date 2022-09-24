@@ -27,7 +27,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Sansation';
+    /*font-family: 'Sansation';*/
 }
 .wrapper{
     width: 1280px;
@@ -52,6 +52,7 @@ img{
 }
 header{
     overflow: hidden;
+     font-family: 'Sansation';
 }
 header *{
     flex: 1 1 33.33%;
