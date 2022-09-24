@@ -5,16 +5,17 @@
 */ 
 @font-face {
     font-family: 'Sansation';
-    src: url('fonts/Sansation_Regular.ttf')format('truetype'),
-    url('fonts/Sansation_Light.ttf')format('truetype'),
-    url('fonts/Sansation_Bold.ttf')format('truetype'),
-    url('fonts/Sansation_Italic.ttf')format('truetype');
+    src: url('font/Sansation_Regular.ttf')format('truetype'),
+    url('font/Sansation_Light.ttf')format('truetype'),
+    url('font/Sansation_Bold.ttf')format('truetype'),
+    url('font/Sansation_Italic.ttf')format('truetype');
    font-weight: normal;
+   font-style: normal;
 }
 
 @font-face {
     font-family: 'Sansation';
-    src: url('fonts/Sansation_Bold.ttf')format('truetype');
+    src: url('font/Sansation_Bold.ttf')format('truetype');
     font-weight: bold;
 }
 
