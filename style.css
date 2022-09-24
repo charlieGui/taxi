@@ -16,21 +16,18 @@
    font-weight: bold;
 }
 
-:root{
-    --bg-color : #111;
-    --color : #000;
-}
-
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Sansation';
 }
+
 .wrapper{
     width: 1280px;
     margin: 0 auto;;
 }
+
 body{
     background-color: rgb(21, 48, 61);
 }
@@ -48,10 +45,18 @@ img{
 .flex{
     display: flex;
 }
+
+.flexLogo{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 2em;
+}
+
 header{
     overflow: hidden;
      font-family: 'Sansation';
 }
+
 header *{
     flex: 1 1 33.33%;
     align-items: center;
@@ -71,21 +76,21 @@ main{
     position: relative;
 }
 
-footer{
-    color: white;
+article{
+    color: #BBB;
     background-color:rgb(21, 48, 61);
     padding: 1em 1em .5em 1em;
    
 }
 
-footer aside{
+article section{
     width:90%;
     margin: 0 auto;
     color:#DDD;
     text-align: center;
 }
 
-aside h3{
+section h3{
     border-top: 1px solid rgb(255, 30, 0);
     border-bottom: 1px solid rgb(255, 30, 0);
     display: inline;
@@ -95,21 +100,18 @@ aside h3{
     font-family: 'Roboto', sans-serif;
 }
 
-aside p{
+section p{
     font-family: 'Robot', sans-serif;
 }
 
-
- #small{
+#small{
     margin: 1em 0 .5em 0;
     text-align: center;
     font-size: .6em;
     letter-spacing: 2px;
-    
 }
 
 #small a{
-    
     color: #BBB;
     font-weight: bold;
 }
@@ -129,35 +131,27 @@ aside p{
         background-color:rgba(255, 255, 255, 0.4);
     }
 
-
     .coming{
         color: #111;
         font-size: 2em;
         letter-spacing: 15px;
         font-family: 'Sansation', sans-serif;
-        
     }
 
     header div:first-of-type{
         text-align: center;
-       
     }
 
     header div:last-of-type{
         text-align: center;
     }
+
     img[src*="logo"]{
         width: 8em;
-       
     }
     
-   
-    .image img{
-    
+   .image img{
         filter:brightness(90%);
-        
-       
-
     }
 
     .flexCol{
@@ -165,68 +159,38 @@ aside p{
         flex-direction: column;
     }
 
-    .containerContact{
-        
-        color: #000;
-        text-align: center;
-       
-        position: absolute;
-       
-       width: 100%;
-        left: 80%;
-        top: 13.4%;
-       
-        border-radius: 2px;
-        /*background-color:rgba(255, 255, 255, 0.4);*/
-        /*background-color: #111;*/ /*Pour photo conservé*/
-       z-index: 20;
-       
-    }
-    
-   
     #intro{
-      
         position: relative;
         left: 100%;
         font-size: .9em;
-       
         letter-spacing: 2px;
         text-transform: uppercase;
-       font-weight: bold;
-      
+        font-weight: bold;
     }
 
- p.coming + p{
-    /*-webkit-text-fill-color: rgb(204, 57, 38);*/
-    -webkit-text-fill-color: rgb(39, 39, 90);
-    font-size: 1.75em;
-    text-align: center;
-    margin: 1em 0 0 0 ;
-    font-weight: normal;
-}
-   /* p:first-of-type + p{
-        margin-left: 4em;
+    p.coming + p{
+        -webkit-text-fill-color: rgb(39, 39, 90);
+        font-size: 1.75em;
+        text-align: center;
+        margin: 1em 0 0 0 ;
+        font-weight: normal;
     }
 
-   .last p:last-of-type{
-        margin-left: 2em;
-       
-    }*/
     div.contact{
         display: none;
     }
-   /*p.coming + p > a{
-    color:rgb(44, 44, 131);
 
-    /*margin-right: 3em;
-   }*/
-   
-    footer aside{
+    .wheel{
+        width: 4em;
+    }
+
+article section{
         margin-top: 1.5em;
         margin-bottom: 1.5em;
         background-color:rgb(21, 48, 61); 
     }
-    aside p{
+
+    section p{
         margin-top:1.5em;
     }
 }
@@ -235,16 +199,14 @@ aside p{
 @media screen and (min-width: 680px) and (max-width: 1023px){
     
     header{
-       
-       
-        background-color:rgb(245, 245, 245);
-       
+       background-color:rgb(245, 245, 245);
     }
 
     .flexCol{
         display: flex;
         flex-direction: column;
     }
+
     .coming{
         font-size: 1.35em;
         letter-spacing: 10px;
@@ -262,67 +224,59 @@ aside p{
 
     img[src*="logo"]{
         width: 6.5em;
-      
     }
 
     #intro{
-      
         position: relative;
         width: 200%;
         left: 110%;
         font-size: .8em;
-       /*margin-top:1em;*/
         letter-spacing: 2px;
         text-transform: uppercase;
        font-weight: bold;
-      
     }
 
-
-   
-p.coming + p{
-    /*-webkit-text-fill-color: rgb(204, 57, 38);*/
+    p.coming + p{
     -webkit-text-fill-color: rgb(39, 39, 90);
     font-size: 1.2em;
     text-align: center;
    margin-top: .25em;
-   
-}
+   }
 
-#mail a{
-    font-size: 1.15em;
-    /*-webkit-text-fill-color: rgb(204, 57, 38);*/
+    #mail a{
+        font-size: 1.15em;
     -webkit-text-fill-color: rgb(39, 39, 90);
+    }
 
-}
-div.contact{
-    display: none;
-}
+    div.contact{
+        display: none;
+    }
 
-footer aside{
-    margin-top: 1.75em;
-    margin-bottom: 3em;
-    width: 70%;
-}
+    article section{
+        margin-top: 1.75em;
+        margin-bottom: 3em;
+        width: 70%;
+    }
 
-aside > p{
-    margin-top: 3em;
-    font-size: 1em;
-}
+    section > p{
+        margin-top: 3em;
+        font-size: 1em;
+    }
 
-#small{
-    margin-bottom: 2em;
-}
-
+    .wheel{
+        width: 3.5em;
+   }
 }
 
             /** ECRAN < 680 pixels **/
 
 @media screen and (max-width: 680px){
+
     body{
         background: rgb(210,210,210);
         background: radial-gradient(circle, rgba(210,210,210,1) 1%, rgba(255,255,255,1) 50%);
     }
+
     .flex{
         display: flex;
         flex-direction: column;
@@ -330,33 +284,29 @@ aside > p{
 
     header{
         width: 100%;
-       padding: 4% 0 0 1.5%;
-     
-    }
+        padding: 4% 0 0 1.5%;
+     }
 
-   
-    .coming{
-       
+     .coming{
         color: #111;
         font-size: 1.5em;
         text-align: center;
         padding: .5em;
         letter-spacing: 10px;
         font-family: 'Sansation', sans-serif;
-       
     }
 
     h1 img{
-            width: 6em;
-        }
+        width: 6em;
+    }
 
+    .image{
+        margin-left: .3em;
+    }
 
     .image img{
-       
-        margin-left: 2%;                          
         border-left: 4px solid rgb(204, 57, 38);  
         
-       
     }
 
     #intro{
@@ -374,23 +324,13 @@ aside > p{
         display: none;
     }
 
-    .containerContact{
-        color: var(--color);
-        text-align: center;
-
-        }
-
     .contact{
         background-color: rgb(21, 48, 61); 
         padding: 3em 0 3em 0;
-       /* background-color: #111;*/
+        text-align: center;
         font-size: 1.5em;
         border-right: 4px solid rgb(204, 57, 38); 
         margin: .3em .3em .5em 0em;
-        
-        
-
-
     }
     
     .contact p{
@@ -398,68 +338,66 @@ aside > p{
     }
 
     .contact a[href*="tel"]{
-        
         display: inline;
-        
-       border-top: 2px solid rgb(255, 30, 0);
-       border-left:2px solid rgb(255, 30, 0);
-       /*border-right: 1px solid rgb(255, 30, 0);*/
+        border-top: 2px solid rgb(255, 30, 0);
+        border-left:2px solid rgb(255, 30, 0);
         border-radius: 2px;
         padding: .7em 2em 1.5em 3em;
-        /*color:rgb(204, 57, 38);*/
         color: #DDD;
-        
-        
-}
+    }
 
-.contact :first-child{
-    margin-bottom: .8em;
-}
+    .contact :first-child{
+        margin-bottom: .8em;
+    }
 
     .contact a[href*="mailto"]{
         padding: .3em 1em .7em 1.5em;
         border-bottom : 2px solid rgb(255, 30, 0);
-        /*border-left: 1px solid rgb(255, 30, 0);*/
         border-right: 2px solid rgb(255, 30, 0);
-       color: #DDD;
+        color: #DDD;
     }
 
-    footer{
-       
+    article{
         margin: .2em 0   0 .5em;
         padding: 2em 1em ;
-       
         background-color:rgb(21, 48, 61);  
         border-left: 4px solid rgb(204, 57, 38); 
-       
     }
 
-    aside h3{
+    section h3{
        margin: 2em 0;
        text-align: center;
        font-size: 1.5em;
-        
     }
 
-    footer aside{
+    article section{
         margin-top: 1em;
         width: 70%;
         text-align: center;
         font-size: .9em;
-      
     }
 
-    aside p{
+    section p{
         text-align: left;
         margin-top: 2em;
         font-size: 1.2em;
     }
+    
+    .wheel{
+        display: none;
+    }
+
+    #logoWhite{
+        padding-top: 4em;
+        width: 8em;
+        margin: 0 auto;
+    }
+    
     #small {
-   
-    text-align: center;
-    font-size: .6em;
-    letter-spacing: 2px;
-    color: #111;
+        text-align: center;
+        font-size: .6em;
+        letter-spacing: 2px;
+        color: #111;
     }
 
     #small a{
