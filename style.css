@@ -331,20 +331,48 @@ article section{
         font-size: 1.5em;
         border-right: 4px solid rgb(204, 57, 38); 
         margin: .3em .3em .5em 0em;
+        overflow: hidden;
     }
     
     .contact p{
         display: none;  
     }
-
+    
     .contact a[href*="tel"]{
         display: inline;
-        border-top: 2px solid rgb(255, 30, 0);
-        border-left:2px solid rgb(255, 30, 0);
+        border-top: 1px solid rgb(21, 48, 61);
+        border-left:2px solid rgb(21, 48, 61);
         border-radius: 2px;
         padding: .7em 2em 1.5em 3em;
         color: #DDD;
+        position: relative;
     }
+/***** ANIM BORDURE TEL *******/
+    #left{
+        border: 1px solid rgb(255, 30, 0);
+        position: absolute;
+        left: -1%;
+        top: -2%;
+        height: 170%;
+        animation: slideLeft 1s linear;
+    }
+   
+    #top{
+        border: 1px solid rgb(255, 30, 0);
+        position:absolute;
+        top:-1%;
+        left: 0;
+        width: 120%;
+       height: 0;
+        animation: slideTop 1s linear reverse;
+    }
+@keyframes slideTop{
+    from{width : 120%}to{width:0%};
+}
+@keyframes slideLeft {
+    from{height:0%}to{height: 170%;}
+}
+
 
     .contact :first-child{
         margin-bottom: .8em;
@@ -353,10 +381,33 @@ article section{
     .contact a[href*="mailto"]{
         padding: .3em 1em .7em 1.5em;
         border-bottom : 2px solid rgb(255, 30, 0);
-        border-right: 2px solid rgb(255, 30, 0);
+        border-right: 2px solid rgb(21, 48, 61);
         color: #DDD;
+        position: relative;
     }
-
+/******ANIM BORDURE MAIL ***/
+    #right{
+        border: 1px solid rgb(255, 30, 0);
+        position: absolute;
+        right: -.5%;
+        top: -140%;
+        height: 210%;
+       animation: slideR 1s linear  reverse;
+    }
+   
+    /*#bottom{
+        border: 1px solid rgb(255, 30, 0);
+        position:absolute;
+        top:-1%;
+        left: 0;
+        width: 120%;
+        height: 0;
+        animation: slideTop 1s linear reverse;
+    }
+*/
+@keyframes slideR{
+    from{height: 200%;}to{height: 0%;};
+}
     article{
         margin: .2em 0   0 .5em;
         padding: 2em 1em ;
