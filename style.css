@@ -352,9 +352,9 @@ article section{
         border: 1px solid rgb(255, 30, 0);
         position: absolute;
         left: -1%;
-        top: -2%;
-        height: 170%;
-        animation: slideLeft 1s linear;
+        top: 30%;
+        height: -1%;
+        animation: slideLeft 2s ease 600ms forwards;
     }
    
     #top{
@@ -362,15 +362,15 @@ article section{
         position:absolute;
         top:-1%;
         left: 0;
-        width: 120%;
+        width: 0;
        height: 0;
-        animation: slideTop 1s linear reverse;
+        animation: slideTop 2s ease-in reverse forwards;
     }
 @keyframes slideTop{
     from{width : 120%}to{width:0%};
 }
 @keyframes slideLeft {
-    from{height:0%}to{height: 170%;}
+    from{height:0%}to{height: 150%;}
 }
 
 
@@ -380,7 +380,7 @@ article section{
 
     .contact a[href*="mailto"]{
         padding: .3em 1em .7em 1.5em;
-        border-bottom : 2px solid rgb(255, 30, 0);
+        border-bottom : 2px solid rgb(21, 48, 61);
         border-right: 2px solid rgb(21, 48, 61);
         color: #DDD;
         position: relative;
@@ -390,24 +390,29 @@ article section{
         border: 1px solid rgb(255, 30, 0);
         position: absolute;
         right: -.5%;
-        top: -140%;
-        height: 210%;
-       animation: slideR 1s linear  reverse;
+        top: -160%;
+        height: 0;
+       animation: slideR 2.5s ease 500ms forwards;
     }
    
-    /*#bottom{
+    #bottom{
         border: 1px solid rgb(255, 30, 0);
         position:absolute;
-        top:-1%;
-        left: 0;
-        width: 120%;
-        height: 0;
-        animation: slideTop 1s linear reverse;
+        bottom:-5%;
+        right: 0;
+        width: 0;
+        
+       animation: slideB 2.5s ease-in 550ms reverse forwards;
     }
-*/
+
 @keyframes slideR{
-    from{height: 200%;}to{height: 0%;};
+    from{height: 0% }to{height: 220%};
 }
+
+@keyframes slideB{
+    from{width: 120%;}to{width: 0%;}
+}
+
     article{
         margin: .2em 0   0 .5em;
         padding: 2em 1em ;
