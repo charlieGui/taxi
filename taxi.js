@@ -6,7 +6,7 @@ $(document).ready(function () {
 
 //Animation de la phrase d'annonce selon la largeur d'ecran détecter
 function soonAnimation(){
-   if($(window).width() > 680){
+    if($(window).width() > 680){
        $('#intro').animate({"left" : "-100%"}, 25000, "linear",
        function(){
            $(this).css({"left": "100%"});
