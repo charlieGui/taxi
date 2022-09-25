@@ -28,7 +28,7 @@ function hautPage(){
     $('body').append(fleche);
     fleche.css({
         'position': 'fixed',
-        'right': '40px',
+        'right': '20px',
         'display':'none',                               
         'bottom':'20px',
         'font-size':'2em',
@@ -53,9 +53,16 @@ function hautPage(){
                 left:0,
                 behavior:'smooth'});
          })
-        fleche.hover(function(){
-            fleche.css("opacity", "0.9");                      
-        },function(){
+         //Si screen < 1023px = scrollTop opacity faible constante, sinon effet au survol.
+        if($(window).width() > 1023){ 
+            fleche.hover(function(){
+                fleche.css("opacity", "0.9");    
+                },function(){
+                fleche.css("opacity", "0.2");
+            });
+        }else{
             fleche.css("opacity", "0.2");
-        });
+        }
+    
+    
     }
