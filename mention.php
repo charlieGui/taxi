@@ -1,15 +1,15 @@
 <style>
     img{text-align:center; margin:1em }
-
     h2{text-align:center; margin: 2em 0 1em 0}
     p{width:80%; margin:0 auto;}
     .flex{display:flex; flex-direction:column;justify-content:space-around;align-items:center;}
     body{background-color:rgb(210, 210, 210);color:#000}
     a{color:rgb(204, 57, 38);}
 </style>
+
 <div class="flex">
-<a href="index.php?cible=1"><img src="logos/logo.png" alt="abcdTaxi" title="Menu principal"></a>
-<h1>MENTIONS LEGALES</h1>
+    <a href="index.php?cible=1"><img src="logos/logo.png" alt="abcdTaxi" title="Menu principal"></a>
+    <h1>MENTIONS LEGALES</h1>
 </div>
 
 <div>
