@@ -266,8 +266,7 @@ section p{
 @media screen and (max-width: 680px){
 
     body{
-        background: rgb(210,210,210);
-        background: radial-gradient(circle, rgba(210,210,210,1) 1%, rgba(255,255,255,1) 50%);
+        background: rgb(240, 240, 240);
     }
 
     .flex{
@@ -449,4 +448,45 @@ section p{
     #small a{
         color: #111;
     }
+}
+
+
+                                        /****************************************
+                                                REGLES MENTIONS LEGALES
+                                        *****************************************/
+
+
+#ml{
+    background-color: rgb(245, 245, 245);
+}
+
+#ml .flex{
+    display:flex; 
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+}
+#ml img{
+    text-align:center;
+    width: 10em;
+    margin: 1em 0;
+    }
+
+#ml a{
+    color:rgb(204, 57, 38);
+}
+
+#ml h2{
+        text-align:center;
+        margin: 2em 0 1em 0
+    }
+
+#ml p{
+    width:80%;
+    margin:0 auto;
+    }
+
+#ml footer{
+    margin-top: 1em;
+    margin-bottom: .5em;
 }
