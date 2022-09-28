@@ -1,31 +1,26 @@
 /*
-    **********************************************************
-                        REGLES CSS COMMUNES
-    **********************************************************
+                    **********************************************************
+                                    REGLES CSS COMMUNES
+                    **********************************************************
 */ 
 @font-face {
     font-family: 'Sansation';
     src: url('font/Sansation_Regular.ttf')format('truetype');
-   font-weight: normal;
-   font-style: normal;
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
     font-family: 'Sansation';
     src:url('font/Sansation_Bold.ttf')format('truetype');
-   font-weight: bold;
+    font-weight: bold;
 }
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Sansation';
-}
-
-.wrapper{
-    width: 1280px;
-    margin: 0 auto;;
+    font-family:  'Sansation', sans-serif; 
 }
 
 body{
@@ -37,13 +32,8 @@ a{
 }
 
 img{
-    width: 100%;
     max-width: 100%;
     height: auto;
-}
-
-.flex{
-    display: flex;
 }
 
 .flexLogo{
@@ -54,7 +44,6 @@ img{
 
 header{
     overflow: hidden;
-     font-family: 'Sansation';
 }
 
 header *{
@@ -67,26 +56,19 @@ header *{
 }
 
 .coming{
-    font-family: 'Sansation' ;
     font-weight: bold;
     display: none;
   }
 
-main{
-    position: relative;
-}
-
 article{
-    color: #BBB;
     background-color:rgb(21, 48, 61);
     padding: 1em 1em .5em 1em;
-   
 }
 
 article section{
     width:90%;
     margin: 0 auto;
-    color:#DDD;
+    color: #DDD;
     text-align: center;
 }
 
@@ -104,7 +86,7 @@ section p{
     font-family: 'Robot', sans-serif;
 }
 
-#small{
+    #small{
     margin: 1em 0 .5em 0;
     text-align: center;
     font-size: .6em;
@@ -112,15 +94,16 @@ section p{
 }
 
 #small a{
-    color: #BBB;
     font-weight: bold;
 }
 /*
-    ***********************************************************
-                        MEDIA QUERIES
-    ***********************************************************
+                        ***********************************************************
+                                            MEDIA QUERIES
+                        ***********************************************************
 */
-            /** 1024 pixels < ECRAN  **/
+                                    /************************
+                                    * 1024 pixels < ECRAN  *
+                                    ************************/
 
 @media screen and (min-width:1024px){
   
@@ -131,28 +114,24 @@ section p{
         background-color:rgba(255, 255, 255, 0.4);
     }
 
+    .flex{
+        display: flex;
+    }
+
     .coming{
         color: #111;
         font-size: 2em;
         letter-spacing: 15px;
-        font-family: 'Sansation', sans-serif;
-    }
+      }
 
-    header div:first-of-type{
+    header div:nth-child(2){
         text-align: center;
     }
-
-    header div:last-of-type{
-        text-align: center;
-    }
-
+    
     img[src*="logo"]{
         width: 8em;
     }
     
-   .image img{
-        /*filter:brightness(90%);*/
-    }
 
     .flexCol{
         display: flex;
@@ -184,7 +163,7 @@ section p{
         width: 4em;
     }
 
-article section{
+    article section{
         margin-top: 1.5em;
         margin-bottom: 1.5em;
         background-color:rgb(21, 48, 61); 
@@ -193,13 +172,25 @@ article section{
     section p{
         margin-top:1.5em;
     }
-}
-             /**  680 pixels > ECRAN < 1023 pixels **/
 
+    #small a{
+        color: #DDD;
+    }
+}
+
+
+                                            /***********************************
+                                            * 680 PIXELS > ECRAN < 1023 PIXELS *
+                                            ************************************/
+             
 @media screen and (min-width: 680px) and (max-width: 1023px){
     
     header{
-       background-color:rgb(245, 245, 245);
+       background-color:rgb(230, 230, 230);
+    }
+
+    .flex{
+        display: flex;
     }
 
     .flexCol{
@@ -214,14 +205,10 @@ article section{
         font-family: 'Sansation', sans-serif;
     }
     
-    header div:first-of-type{
-        text-align: right;
-    }
-
-    header div:last-of-type{
+    header div:nth-child(2){
         text-align: center;
     }
-
+    
     img[src*="logo"]{
         width: 6.5em;
     }
@@ -233,19 +220,19 @@ article section{
         font-size: .8em;
         letter-spacing: 2px;
         text-transform: uppercase;
-       font-weight: bold;
+        font-weight: bold;
     }
 
     p.coming + p{
-    -webkit-text-fill-color: rgb(39, 39, 90);
-    font-size: 1.2em;
-    text-align: center;
-   margin-top: .25em;
+        -webkit-text-fill-color: rgb(39, 39, 90);
+        font-size: 1.2em;
+        text-align: center;
+        margin-top: .25em;
    }
 
     #mail a{
         font-size: 1.15em;
-    -webkit-text-fill-color: rgb(39, 39, 90);
+        -webkit-text-fill-color: rgb(39, 39, 90);
     }
 
     div.contact{
@@ -266,9 +253,15 @@ article section{
     .wheel{
         width: 3.5em;
    }
+
+   #small a{
+        color: #DDD;
+   }
 }
 
-            /** ECRAN < 680 pixels **/
+                                            /***********************************
+                                                    ECRAN < 680 PIXELS 
+                                            ************************************/
 
 @media screen and (max-width: 680px){
 
@@ -314,10 +307,11 @@ article section{
         position: relative;
         width: 200%;
         left: 100%;
-        font-size: .9em;
+        font-size: .7em;
         color: #111;
         margin: 2em 0 0em 0;
         font-weight: bold;
+        text-transform: uppercase;
         letter-spacing: 2px;
     }
 
@@ -350,31 +344,6 @@ article section{
         color: #DDD;
         position: relative;
     }
-/***** ANIM BORDURE TEL *******/
-    #left{
-        position: absolute;
-        left: -1%;
-        top: 30%;
-        height: -1%;
-        animation: slideLeft 3.5s ease 1.1s forwards;
-    }
-   
-    #top{
-       position:absolute;
-        top:-1%;
-        left: 0;
-        width: 0;
-        animation: slideTop 3.5s ease-in 500ms reverse forwards;
-    }
-@keyframes slideTop{
-    from{width : 120%;border:1px solid rgb(255, 30, 0)}
-    to{width:0%;border:1px solid rgb(255, 30, 0)};
-}
-@keyframes slideLeft {
-    from{height:0%;border:1px solid rgb(255, 30, 0)}
-    to{height: 150%;border:1px solid rgb(255, 30, 0)};
-}
-
 
     .contact :first-child{
         margin-bottom: .8em;
@@ -387,7 +356,35 @@ article section{
         color: #DDD;
         position: relative;
     }
-/******ANIM BORDURE MAIL ***/
+
+/***** ANIMATION CONTACT *******/
+
+    #left{
+        position: absolute;
+        left: -1%;
+        top: 30%;
+        height: -1%;
+        animation: slideLeft 3.5s ease 1.1s forwards;
+    }
+   
+    #top{
+        position:absolute;
+        top:-1%;
+        left: 0;
+        width: 0;
+        animation: slideTop 3.5s ease-in 500ms reverse forwards;
+    }
+
+    @keyframes slideTop{
+        from{width : 120%;border:1px solid rgb(255, 30, 0)}
+        to{width:0%;border:1px solid rgb(255, 30, 0)};
+    }
+
+    @keyframes slideLeft {
+        from{height:0%;border:1px solid rgb(255, 30, 0)}
+        to{height: 150%;border:1px solid rgb(255, 30, 0)};
+    }
+
     #right{
         position: absolute;
         right: -.5%;
@@ -403,15 +400,15 @@ article section{
         animation: slideB 3.9s ease-in 1.05s reverse forwards;
     }
 
-@keyframes slideR{
-    from{height: 0%; border:1px solid rgb(255, 30, 0) }
-    to{height: 220%; border: 1px solid rgb(255, 30, 0)};
-}
+    @keyframes slideR{
+        from{height: 0%; border:1px solid rgb(255, 30, 0) }
+        to{height: 220%; border: 1px solid rgb(255, 30, 0)};
+    }
 
-@keyframes slideB{
-    from{width: 120%;border:1px solid rgb(255, 30, 0)}
-    to{width: 0%;border:1px solid rgb(255, 30, 0)};
-}
+    @keyframes slideB{
+        from{width: 120%;border:1px solid rgb(255, 30, 0)}
+        to{width: 0%;border:1px solid rgb(255, 30, 0)};
+    }
 
     article{
         margin: .2em 0   0 .3em;
@@ -424,21 +421,19 @@ article section{
 
     section h3{
        margin: 2em 0;
-       text-align: center;
        font-size: 1.5em;
     }
 
     article section{
         margin-top: 1em;
         width: 70%;
-        text-align: center;
         font-size: .9em;
     }
 
     section p{
         text-align: left;
         margin-top: 2em;
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
     
     .wheel{
@@ -451,15 +446,7 @@ article section{
         margin: 0 auto;
     }
     
-    #small {
-        text-align: center;
-        font-size: .6em;
-        letter-spacing: 2px;
-        color: #111;
-    }
-
     #small a{
-        font-weight: bold;
         color: #111;
     }
 }
