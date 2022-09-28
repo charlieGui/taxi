@@ -32,6 +32,7 @@ a{
 }
 
 img{
+    width: 100%;
     max-width: 100%;
     height: auto;
 }
@@ -473,7 +474,7 @@ section p{
     }
 
 #ml a{
-    color:rgb(204, 57, 38);
+    -webkit-text-fill-color:rgb(204, 57, 38);
 }
 
 #ml h2{
