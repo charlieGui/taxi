@@ -92,6 +92,7 @@ section p{
     text-align: center;
     font-size: .6em;
     letter-spacing: 2px;
+    -webkit-text-size-adjust: auto;
 }
 
 #small a{
